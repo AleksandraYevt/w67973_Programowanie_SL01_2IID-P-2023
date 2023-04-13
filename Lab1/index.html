@@ -4,12 +4,23 @@
    <meta charset="utf-8" />
    <title>Moja strona</title>
    <style>
-        html {
-            font-size: 22 px;
-        }
         body {
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+    }
+
+        h1 {
+    font-size: 50px;
+    }
+
+        h4 {
+    font-size: 30px;
+    }
+    body {
             background-color: #333;
             color: whitesmoke;
+            padding: 0px;
+            font-family: "Inter", sans-serif;
         }
         a:link, a:visited {
             color: rgb(35, 159, 241);
@@ -17,24 +28,24 @@
             text-decoration: none;
         }
         table, th, td {
-        border: 1px solid whitesmoke;
-        border-collapse: collapse;
+            border: 1px solid whitesmoke;
+            border-collapse: collapse;
         }
-    </style>
+   </style>
 </head>
 <body>
-    <header><h1><center>Moja pierwsza strona</center></h1></header>
-    <h1>Zadanie 1</h1>
+    <header><h2><center>Moja pierwsza strona</center></h2></header>
+    <h2>Zadanie 1</h2>
     <h3>Informacja o mnie</h3>
     <p>Imię: <i>Oleksandra</i></p>
     <p>Nazwisko: <i>Yevtushenko</i></p>
     <p>Kraj urodzenia: <i>Ukraina</i></p>
     <p>Uliubione anime: <i>JoJo's bizzare adventure</i></p>
 
-    <h1>Zadanie 2</h1>
+    <h2>Zadanie 2</h2>
     <ol>
         <li>Chainsaw man</li>
-        <li>Boku no hero academia</li>
+        <li>Boku no <s>Pico</s> hero academia</li>
         <li>One piece</li>
         <li>Fire force</li>
       </ol>
@@ -45,7 +56,7 @@
         <li>Batman</li>
     </ul>
     
-    <h1>Zadanie 3</h1>
+    <h2>Zadanie 3</h2>
     <p>The best cartoons imho:</p>
     <ul>
         <li><a href="https://en.wikipedia.org/wiki/The_Owl_House">The owl house</a></li>
@@ -55,7 +66,7 @@
         <li><a href="https://en.wikipedia.org/wiki/Inside_Job_(2021_TV_series)">Inside job</a></li>
     </ul>
 
-    <h1>Zadanie 4</h1>
+    <h2>Zadanie 4</h2>
     <table style="width:25%">
         <tr>
           <td>2022 – obecnie</th>
@@ -71,7 +82,7 @@
         </tr>
       </table>
     <aside>
-        <h1>Zadanie 4.1</h1>
+        <h2>Zadanie 4.1</h2>
         <table style="width:100px">
             <tr style="height:20px">
                 <td></td>
@@ -95,27 +106,34 @@
         </table>
     </aside>
 
-    <h1>Zadanie 5</h1>
+    <h2>Zadanie 5</h2>
     <img src="maxresdefault.jpg">
 
     <h1>Zadanie 7</h1>
     <a href="1.html">Ulubione anime</a></br>
     <a href="2.html">Ulubione kreskówki</a>
     
-    <h1>Zadanie 8</h1>
+    <h2>Zadanie 8</h2>
     <form action="*">
         <label>Nickname:</label></br> <input type="text"/></br>
         <label>Password:</label></br> <input type="text"/></br>
         <label>Remember password: </label>
-        <input type="radio" name="radio" value="yes" /> yes <input type="radio" name="radio" value="no" /> no </br>
-        <p>Czy podoba ci się ta strona?</p>
-        <select name="Przeglądarka">
-            <option selected>Absolutnie tak</option>
+        <input type="radio" name="radio" value="yes" id="Yes" />
+        <label for="Yes">Yes</label>
+        <input type="radio" name="radio" value="no" id="No"/>
+        <label for="No">No</label></br></br>
+        <input type="submit">
+    </form>
+        <label>Czy podoba ci się ta strona?</label><br>
+        <select>
+            <option>Absolutnie tak</option>
             <option>Raczej tak</option>
             <option>Nie jestem piewen(a)</option>
             <option>Raczej nie</option>
             <option>Absolutnie nie</option>
-        </form>
+        </select><br><br>
+
+
 
 
 </body>

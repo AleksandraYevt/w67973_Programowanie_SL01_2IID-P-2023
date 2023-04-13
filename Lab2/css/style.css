@@ -1,0 +1,52 @@
+body {
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+header {
+    background-color: rgb(238, 238, 238);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px 2px #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+header h2 {
+    color: rgb(59, 94, 155)
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(17, 17, 17)
+}
+
+#link {
+    color:rgb(59, 162, 106)
+}
