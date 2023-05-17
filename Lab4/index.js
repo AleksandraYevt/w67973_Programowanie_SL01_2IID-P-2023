@@ -82,6 +82,8 @@ console.log(rec1.check())
 //Zad6
 function Creat(len,wid,rectangle){
     const wpis = new rectangle(len,wid);
+    document.write("Length is: ", wpis.len,"  ");
+    document.write("Width is: ", wpis.wid)
     wpis.pole();
     wpis.obwod();
     wpis.check();
