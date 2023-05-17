@@ -53,3 +53,39 @@ function car(Marka, Model, RokProdukcji, Kolor, Predkosc){
 
 const car1 = new car('Renault','Megane', '2016','Yellow','220')
 console.log(car1.genInforamation())
+
+//Zad5
+function rectangle (width, height){
+    this.width = width;
+    this.height = height;
+    this.pole = function(){
+        return "Pole: " + (this.width*this.height)
+    }
+    this.obwod = function(){
+        return "Obwód: " + ((this.width+this.height)*2)
+    }
+    this.check = function(){
+        if (this.width == this.height){
+            return "To jest kwadrat."
+        }
+        else{
+            return "To nie jest kwadrat."
+        } 
+    }
+}
+
+const rec1 = new rectangle(21, 3)
+console.log(rec1.pole())
+console.log(rec1.check())
+
+
+//Zad6
+function Creat(len,wid,rectangle){
+    const wpis = new rectangle(len,wid);
+    wpis.pole();
+    wpis.obwod();
+    wpis.check();
+ }
+ var l = document.getElementById("pole");
+ var w = document.getElementById("pole1");
+ Creat(l,w,rectangle);
