@@ -44,7 +44,7 @@ console.log(car1.genInforamation())
 
 
 
-orm.addEventListener('submit', (event) => {
+1orm.addEventListener('submit', (event) => {
     event.preventDefault();
     if (validForm()) {
         alert('Sukces');
